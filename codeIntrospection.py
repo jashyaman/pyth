@@ -1,0 +1,29 @@
+#code introspection
+'''...
+help()
+dir()
+hasattr()
+id()
+type()
+repr()
+callable()
+issubclass()
+isinstance()
+__doc__
+__name__
+...'''
+class Vehicle:
+    name = ""
+    kind = "car"
+    color = ""
+    value = 100.00
+    def description(self):
+        desc_str = "%s is a %s %s worth $%.2f." % (self.name, self.color, self.kind, self.value)
+        return desc_str
+
+help(Vehicle)
+dir(Vehicle)
+
+callable(Vehicle)
+
+hasattr(Vehicle, 'name')
